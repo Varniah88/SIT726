@@ -31,7 +31,7 @@ import image2 from "../Images/R2.avif";
 import image3 from "../Images/R3.avif";
 import image4 from "../Images/comp.jpg";
 import image5 from "../Images/sec.jpg";
-import image6 from "../Images/ewaste1.png";
+import image6 from "../Images/edu.jpg";
 import image7 from "../Images/schedule.webp";
 import image8 from "../Images/rebup.webp";
 import image9 from "../Images/pickup.webp";
@@ -69,86 +69,86 @@ const HomePage = () => {
 
       <Navbar />
       {/* Dummy content */}
-<Box
-  sx={{
-    p: { xs: 3, md: 6 },
-    minHeight: "500px",
-    backgroundImage: `url(${sampleImage1})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    position: "relative",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-    color: "white",
-    borderRadius: 4,
-    boxShadow: 6,
-    overflow: "hidden",
-  }}
->
-  {/* Soft green overlay for freshness */}
-  <Box
-    sx={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundColor: "rgba(46, 125, 50, 0.5)", // greenish overlay
-      zIndex: 1,
-    }}
-  />
+      <Box
+        sx={{
+          p: { xs: 3, md: 6 },
+          minHeight: "500px",
+          backgroundImage: `url(${sampleImage1})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          position: "relative",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+          color: "white",
+          borderRadius: 4,
+          boxShadow: 6,
+          overflow: "hidden",
+        }}
+      >
+        {/* Soft green overlay for freshness */}
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(46, 125, 50, 0.5)", // greenish overlay
+            zIndex: 1,
+          }}
+        />
 
-  {/* Text Content */}
-  <Box
-    sx={{
-      position: "relative",
-      zIndex: 2,
-      maxWidth: "700px",
-      px: { xs: 2, md: 4 },
-    }}
-  >
-    <Typography
-      variant="h3"
-      gutterBottom
-      sx={{
-        fontFamily: "'Poppins', sans-serif",
-        fontWeight: 700,
-        letterSpacing: "1px",
-        mb: 2,
-      }}
-    >
-      Welcome to <span style={{ color: "#c8e6c9" }}>E-REVIVE!</span>
-    </Typography>
+        {/* Text Content */}
+        <Box
+          sx={{
+            position: "relative",
+            zIndex: 2,
+            maxWidth: "700px",
+            px: { xs: 2, md: 4 },
+          }}
+        >
+          <Typography
+            variant="h3"
+            gutterBottom
+            sx={{
+              fontFamily: "'Poppins', sans-serif",
+              fontWeight: 700,
+              letterSpacing: "1px",
+              mb: 2,
+            }}
+          >
+            Welcome to <span style={{ color: "#c8e6c9" }}>E-REVIVE!</span>
+          </Typography>
 
-    <Typography
-      variant="h6"
-      sx={{
-        fontFamily: "'Poppins', sans-serif",
-        fontWeight: 400,
-        mb: 3,
-        color: "#f1f8e9",
-      }}
-    >
-      Give your Old Tech a New Life — and get rewarded for it
-    </Typography>
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: "'Poppins', sans-serif",
+              fontWeight: 400,
+              mb: 3,
+              color: "#f1f8e9",
+            }}
+          >
+            Give your Old Tech a New Life — and get rewarded for it
+          </Typography>
 
-    <Typography
-      variant="body1"
-      sx={{
-        fontFamily: "'Open Sans', sans-serif",
-        fontSize: "1.1rem",
-        lineHeight: 1.6,
-        color: "#e8f5e9",
-      }}
-    >
-      Recycle, trade, and learn all in one smart, simple platform. Join our
-      movement towards a greener future by reviving yesterday’s technology.
-    </Typography>
-  </Box>
-</Box>
+          <Typography
+            variant="body1"
+            sx={{
+              fontFamily: "'Open Sans', sans-serif",
+              fontSize: "1.1rem",
+              lineHeight: 1.6,
+              color: "#e8f5e9",
+            }}
+          >
+            Recycle, trade, and learn all in one smart, simple platform. Join our
+            movement towards a greener future by reviving yesterday’s technology.
+          </Typography>
+        </Box>
+      </Box>
 
 
 
@@ -171,9 +171,8 @@ const HomePage = () => {
             </Typography>
             <Typography variant="body1" align="center" sx={{ color: "#4e4e4e", mt: 2 }}>
               E-REVIVE is your one-stop platform to responsibly
-              manage e-waste, offering rewards, refurbished
-              devices, learning tools, and environmental Impact
-              tracking.
+              manage E-Waste, trade-in, offering rewards, refurbished
+              marketplace and learning tools
             </Typography>
           </motion.div>
         </Container>
@@ -444,194 +443,194 @@ const HomePage = () => {
         </Container>
       </Box>
 
-     <Box
-  sx={{
-    p: { xs: 3, md: 6 },
-    minHeight: "500px",
-    backgroundImage: `url(${sampleImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    position: "relative",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-    color: "white",
-    borderRadius: 4,
-    boxShadow: 6,
-    overflow: "hidden",
-  }}
->
-  {/* Soft dark overlay for text readability */}
-  <Box
-    sx={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
-      zIndex: 1,
-    }}
-  />
-
-  {/* Content */}
- <Box
-  sx={{
-    p: { xs: 3, md: 6 },
-    minHeight: "500px",
-    backgroundImage: `url(${sampleImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    position: "relative",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-    color: "white",
-    boxShadow: 6,
-    overflow: "hidden",
-  }}
->
-  {/* Dark overlay to shade the image */}
-  <Box
-    sx={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundColor: "rgba(0, 0, 0, 0.6)", // stronger dark shade
-      zIndex: 1,
-    }}
-  />
-
-  {/* Content */}
- <Box
-  sx={{
-    p: { xs: 3, md: 6 },
-    minHeight: "500px",
-    backgroundImage: `url(${sampleImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    position: "relative",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-    color: "white",
-    boxShadow: 6,
-    overflow: "hidden",
-  }}
->
-  {/* Light green overlay */}
-  <Box
-    sx={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundColor: "rgba(76, 175, 80, 0.3)", // light green shade
-      zIndex: 1,
-    }}
-  />
-
-  {/* Content */}
-  <Box
-    sx={{
-      position: "relative",
-      zIndex: 2,
-      maxWidth: "700px",
-      px: { xs: 2, md: 4 },
-    }}
-  >
-    <Typography
-      variant="h3"
-      gutterBottom
-      sx={{
-        fontFamily: "'Poppins', sans-serif",
-        fontWeight: 700,
-        mb: 2,
-      }}
-    >
-      Contact Us
-    </Typography>
-
-    <Typography
-      variant="h6"
-      sx={{
-        fontFamily: "'Poppins', sans-serif",
-        fontWeight: 400,
-        mb: 3,
-        color: "#e0f2f1",
-      }}
-    >
-      We are committed to a greener future. Explore our marketplace, schedule
-      pickups, or trade in old items easily. Join us in building a sustainable
-      tomorrow!
-    </Typography>
-
-    {/* Contact Info */}
-    <Box sx={{ mb: 3 }}>
-      <Typography
-        variant="body1"
+      <Box
         sx={{
-          fontFamily: "'Open Sans', sans-serif",
-          mb: 1,
+          p: { xs: 3, md: 6 },
+          minHeight: "500px",
+          backgroundImage: `url(${sampleImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          position: "relative",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          textAlign: "center",
+          color: "white",
+          borderRadius: 4,
+          boxShadow: 6,
+          overflow: "hidden",
         }}
       >
-        <Phone sx={{ mr: 1 }} /> +1 800 123 4567
-      </Typography>
-      <Typography
-        variant="body1"
-        sx={{
-          fontFamily: "'Open Sans', sans-serif",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Email sx={{ mr: 1 }} /> contact@greenfuture.com
-      </Typography>
-    </Box>
+        {/* Soft dark overlay for text readability */}
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            zIndex: 1,
+          }}
+        />
 
-    {/* Social Media Links */}
-    <Box>
-      <IconButton
-        href="https://facebook.com"
-        target="_blank"
-        sx={{ color: "#e0f2f1" }}
-      >
-        <Facebook />
-      </IconButton>
-      <IconButton
-        href="https://twitter.com"
-        target="_blank"
-        sx={{ color: "#e0f2f1" }}
-      >
-        <Twitter />
-      </IconButton>
-      <IconButton
-        href="https://instagram.com"
-        target="_blank"
-        sx={{ color: "#e0f2f1" }}
-      >
-        <Instagram />
-      </IconButton>
-    </Box>
-  </Box>
-</Box>
+        {/* Content */}
+        <Box
+          sx={{
+            p: { xs: 3, md: 6 },
+            minHeight: "500px",
+            backgroundImage: `url(${sampleImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            position: "relative",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            color: "white",
+            boxShadow: 6,
+            overflow: "hidden",
+          }}
+        >
+          {/* Dark overlay to shade the image */}
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 0.6)", // stronger dark shade
+              zIndex: 1,
+            }}
+          />
 
-</Box>
+          {/* Content */}
+          <Box
+            sx={{
+              p: { xs: 3, md: 6 },
+              minHeight: "500px",
+              backgroundImage: `url(${sampleImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              position: "relative",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              textAlign: "center",
+              color: "white",
+              boxShadow: 6,
+              overflow: "hidden",
+            }}
+          >
+            {/* Light green overlay */}
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backgroundColor: "rgba(76, 175, 80, 0.3)", // light green shade
+                zIndex: 1,
+              }}
+            />
 
-</Box>
+            {/* Content */}
+            <Box
+              sx={{
+                position: "relative",
+                zIndex: 2,
+                maxWidth: "700px",
+                px: { xs: 2, md: 4 },
+              }}
+            >
+              <Typography
+                variant="h3"
+                gutterBottom
+                sx={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontWeight: 700,
+                  mb: 2,
+                }}
+              >
+                Contact Us
+              </Typography>
+
+              <Typography
+                variant="h6"
+                sx={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontWeight: 400,
+                  mb: 3,
+                  color: "#e0f2f1",
+                }}
+              >
+                We are committed to a greener future. Explore our marketplace, schedule
+                pickups, or trade in old items easily. Join us in building a sustainable
+                tomorrow!
+              </Typography>
+
+              {/* Contact Info */}
+              <Box sx={{ mb: 3 }}>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontFamily: "'Open Sans', sans-serif",
+                    mb: 1,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Phone sx={{ mr: 1 }} /> +1 800 123 4567
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontFamily: "'Open Sans', sans-serif",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Email sx={{ mr: 1 }} /> contact@greenfuture.com
+                </Typography>
+              </Box>
+
+              {/* Social Media Links */}
+              <Box>
+                <IconButton
+                  href="https://facebook.com"
+                  target="_blank"
+                  sx={{ color: "#e0f2f1" }}
+                >
+                  <Facebook />
+                </IconButton>
+                <IconButton
+                  href="https://twitter.com"
+                  target="_blank"
+                  sx={{ color: "#e0f2f1" }}
+                >
+                  <Twitter />
+                </IconButton>
+                <IconButton
+                  href="https://instagram.com"
+                  target="_blank"
+                  sx={{ color: "#e0f2f1" }}
+                >
+                  <Instagram />
+                </IconButton>
+              </Box>
+            </Box>
+          </Box>
+
+        </Box>
+
+      </Box>
 
 
       <Footer />

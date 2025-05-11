@@ -33,6 +33,7 @@ const MarketplacePage = () => {
   // Dialog popup
   const [openDialog, setOpenDialog] = useState(false);
   const [dialogItem, setDialogItem] = useState(null);
+  const [isRedeemed, setIsRedeemed] = useState(false);  // NEW: redeem state
 
   const handleBuy = (item) => {
     setSelectedItem(item);
@@ -52,6 +53,7 @@ const MarketplacePage = () => {
   const handleDialogClose = () => {
     setOpenDialog(false);
     setDialogItem(null);
+    setIsRedeemed(false);  // Reset redeem when closing
   };
 
   // Items with Title + Description + Price
@@ -216,29 +218,26 @@ const MarketplacePage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
-               <Typography
+              <Typography
                 variant="h5"
                 gutterBottom
                 sx={{ color: "#2e7d32", fontWeight: "bold", textAlign: "center", mb: 4 }}
               >
                 Pay for {selectedItem}
               </Typography>
-               <Typography
+              <Typography
                 variant="subtitle1"
                 sx={{ color: "#2e7d32", mb: 1, textAlign: "center", fontWeight: 500 }}
               >
                 We accept:
               </Typography>
-              
+
               <Box sx={{ display: "flex", justifyContent: "center", gap: 2, mb: 3 }}>
                 <FaCcVisa size={40} color="#1a237e" />
                 <FaCcMastercard size={40} color="#ff6f00" />
                 <FaCcAmex size={40} color="#1565c0" />
                 <FaCcDiscover size={40} color="#f57c00" />
               </Box>
-
-             
-             
 
               <Box
                 sx={{
@@ -334,9 +333,26 @@ const MarketplacePage = () => {
               <Typography variant="body1" sx={{ textAlign: "center", color: "#4e4e4e", mb: 1 }}>
                 {dialogItem.description}
               </Typography>
-              <Typography variant="h6" sx={{ textAlign: "center", color: "#2e7d32", fontWeight: "bold", mb: 2 }}>
-                Price: {dialogItem.price}
+
+              {/* Price + Redeem Button */}
+              <Typography variant="h6" sx={{ textAlign: "center", color: "#2e7d32", fontWeight: "bold", mb: 1 }}>
+                Price: {isRedeemed
+                  ? `$${(parseFloat(dialogItem.price.replace(/[^0-9.]/g, "")) * 0.85).toFixed(2)}`
+                  : dialogItem.price}
               </Typography>
+
+              <Box sx={{ display: "flex", justifyContent: "center", gap: 1, mb: 2 }}>
+                {!isRedeemed && (
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    sx={{ borderRadius: 2 }}
+                    onClick={() => setIsRedeemed(true)}
+                  >
+                    Redeem 15% Off
+                  </Button>
+                )}
+              </Box>
 
               <Box sx={{ display: "flex", justifyContent: "center", mt: 3 }}>
                 <Button
